@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 
-const todoItems = new mongoose.Schema({
-    item: {
-        title: String,
-        description: String,
-        date: Date,
-    }
+const itemsSchema = new mongoose.Schema({
+    title: String,
+    description: String,
+    date: Date,
 });
 
-module.exports = mongoose.model('todoItems', todoItems);
+const Items = mongoose.model('items', itemsSchema);
+module.exports = Items;
