@@ -60,6 +60,19 @@ body {
     cursor: pointer;
 }
 
+.inputBox {
+    width: 90%;
+    margin: 5px;
+    align-items: center;
+}
+
+.descriptionBox {
+    margin: 5px;
+    width: 90%;
+    height: 100px;
+    resize: none;
+}
+
 .task.reminder {
     border-left: 5px solid green;
 }

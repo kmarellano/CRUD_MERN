@@ -1,11 +1,18 @@
-const Button = ({color,addItem}) => {
+import { useHistory } from "react-router";
+
+const Button = ({color,destination,text}) => {
+    let history = useHistory();
+
     return (
-        <button 
-        className='btn'
-        style={{backgroundColor: color}}
-        onClick = {addItem}
-        
-        >Add Item</button>
+            <button 
+            type="button"
+            className='btn'
+            style={{backgroundColor: color}}
+            onClick={()=>{  
+                history.push(`/${destination}`);
+            }}
+            >{text}
+            </button>
     )
 }
 

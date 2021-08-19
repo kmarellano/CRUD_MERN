@@ -1,10 +1,18 @@
-import Header from './components/Header'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Add from './components/Add'
+import Body from './components/Body';
 
 function App() {
     return ( 
-      <div className = "container">
-        <Header/>
-      </div>
+      <Router>
+        <div className = "container">
+            <Switch>
+              <Route path="/" exact component={Body} />
+              <Route path="/addItem" exact component={Add} />
+            </Switch>
+        </div>
+      </Router>
     );
 }
 
