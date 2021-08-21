@@ -14,9 +14,11 @@ body {
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
+    height: 500px;
     border: 1px solid steelblue;
     padding: 30px;
     border-radius: 5px;
+    overflow-y: scroll;
 }
 
 .header {
@@ -40,6 +42,22 @@ body {
     font-family: inherit;
 }
 
+.btn2 {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    position: relative;
+    left: 330px;
+}
+
 .btn:focus {
     outline: none;
 }
@@ -58,6 +76,7 @@ body {
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    border-left: 5px solid blue;
 }
 
 .inputBox {
@@ -79,8 +98,12 @@ body {
 
 .task h3 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+
+.task h2 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .add-form {
